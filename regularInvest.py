@@ -9,7 +9,7 @@ from matplotlib import pyplot as plt
 
 st.header('Regular Investment Plan 定期定額投資計畫')
 syb = st.text_input('Please Input The Stock ID', placeholder='0050.TW / 006201.TWO / SPY', value='006201.TWO')
-backDate = st.number_input('Please Input Back Date', step=100, min_value=300)
+backDate = st.number_input('Please Input Back Date', step=100, min_value=1000)
 regCapital = st.number_input('Please Input Regular Investment Amount', step=100, min_value=1000) 
 invDate = st.number_input('Please Input The Trading Date Of Each Month', step=1, min_value=1, value=5)
 tax = st.number_input('Please Input The Tax(%)', step=0.1, min_value=0.1425, value=0.1425, format="%.4f")
